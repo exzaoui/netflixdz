@@ -28,13 +28,14 @@ $serie_cat_id=$serie_info['cat_id'];
         $r=mysqli_query($dbc,$q);
         if($r){
             while($season=mysqli_fetch_assoc($r)){
+                //echo $season['img'];exit();
                 ?>
                 <!-- Basic Card Example -->
                 <div class="col-md-6 text-center" style="margin-bottom: 20px;">
                     <div class="card">
-                        <a href="episode.php?season=<?= $season['id'] ?>"><img src="img/b.jpg" class="card-img-top" alt="..."></a>
+                        <a href="episode.php?season=<?= $season['id'] ?>"><img src="<?= $season['img'] ?>" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="episode.php?season=<?= $season['id'] ?>"><h5 class="card-title">Saison <?= $season['num'] ?></h5></a>
+                            <a href="episode.php?season=<?= $season['id'] ?>" style="color: #000839;"><h5 class="card-title">Saison <?= $season['num'] ?></h5></a>
                             <a href="episode.php?season=<?= $season['id'] ?>" class="btn btn-danger">Regarder maintenant</a>
                         </div>
                     </div>
@@ -62,9 +63,9 @@ $serie_cat_id=$serie_info['cat_id'];
             while($serie=mysqli_fetch_assoc($r)){
                 ?>
                 <!-- Basic Card Example -->
-                <div class="col-md-3 text-center">
-                    <div class="card" style="width: 18rem;">
-                        <a href="seasons.php?serie=<?= $serie['id'] ?>"><img src="img/<?= $serie['img'] ?>" class="card-img-top" alt="..."></a>
+                <div class="col-md-3 text-center" style="margin-bottom: 20px;">
+                    <div class="card">
+                        <a href="seasons.php?serie=<?= $serie['id'] ?>"><img src="<?= $serie['img'] ?>" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <a href="seasons.php?serie=<?= $serie['id'] ?>"><h5 class="card-title"><?= $serie['title'] ?></h5></a>
                             <a href="seasons.php?serie=<?= $serie['id'] ?>" class="btn btn-danger">Regarder maintenant</a>

@@ -27,9 +27,9 @@
                   while($serie=mysqli_fetch_assoc($r)){
                       ?>
                       <!-- Basic Card Example -->
-                      <div class="col-md-3 text-center">
-                          <div class="card" style="width: 18rem;">
-                              <a href="seasons.php?serie=<?= $serie['id'] ?>"><img src="img/<?= $serie['img'] ?>" class="card-img-top" alt="..."></a>
+                      <div class="col-md-3 text-center" style="margin-bottom: 20px">
+                          <div class="card">
+                              <a href="seasons.php?serie=<?= $serie['id'] ?>"><img src="<?= $serie['img'] ?>" class="card-img-top" alt="..."></a>
                               <div class="card-body">
                                   <a href="seasons.php?serie=<?= $serie['id'] ?>"><h5 class="card-title"><?= $serie['title'] ?></h5></a>
                                   <a href="seasons.php?serie=<?= $serie['id'] ?>" class="btn btn-danger">Regarder maintenant</a>
