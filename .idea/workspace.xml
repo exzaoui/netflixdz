@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="343a7803-c870-4dd9-bf71-8a5728c72fff" name="Default Changelist" comment="update 2.0" />
+    <list default="true" id="343a7803-c870-4dd9-bf71-8a5728c72fff" name="Default Changelist" comment="update 2.0">
+      <change afterPath="$PROJECT_DIR$/file.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addEp.php" beforeDir="false" afterPath="$PROJECT_DIR$/addEp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/function.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/function.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/youtubeApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/youtubeApi.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +63,9 @@
       <option name="presentableId" value="Default" />
       <updated>1588542291111</updated>
       <workItem from="1588542294870" duration="311000" />
+      <workItem from="1588812551770" duration="174000" />
+      <workItem from="1588812752005" duration="55000" />
+      <workItem from="1588973137597" duration="2186000" />
     </task>
     <task id="LOCAL-00001" summary="delete commit">
       <created>1588542343187</created>
@@ -94,6 +104,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete commit" />
@@ -109,5 +120,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="552" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1588542556528" />
+    <state x="504" y="201" key="git4idea.merge.GitPullDialog" timestamp="1588973158333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="504" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1588973158333" />
   </component>
 </project>

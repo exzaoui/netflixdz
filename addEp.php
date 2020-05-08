@@ -1,9 +1,26 @@
 <?php
 require_once('connect.php');
+require_once ('includes/function.inc.php');
 
 if (isset($_GET['serie']) and isset($_GET['season'])) {
   $serie_id=$_GET['serie'];
   $season_id=$_GET['season'];
+  $url=$_GET['url'];
+  $playlist=youtubeVideosFromPlaylist($url);
+    $i=1;
+  foreach($playlist->items AS $item):
+  $videoId=$item->snippet->resourceId->videoId;
+  $url="https://www.youtube.com/watch?v=".$videoId;
+  $q="INSERT INTO `episodes`(`num`, `serie_id`, `season_id`, `url`) VALUES ('$i','$serie_id','$season_id', '$url')";
+  $r=mysqli_query($dbc,$q);
+  if($r){
+      $i++;
+  }else{
+      echo mysqli_error($dbc);
+  }
+    endforeach;
+ exit();
+
 }else{
   echo "err";
 }
