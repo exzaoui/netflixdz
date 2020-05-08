@@ -15,7 +15,7 @@ print_r($playlist);exit();
 <body>
 <ul>
 <?php foreach($playlist->items AS $item): ?>
-  <li><h4><?php echo $item->snippet->resourceId->videoId;  ?></h4></li>
+  <li><h4><?php echo $item->snippet->title  ."</br>". $item->snippet->resourceId->videoId?></h4></li>
 <?php endforeach; ?>
 </ul>
 </body>

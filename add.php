@@ -25,13 +25,14 @@ if(isset($_POST['addSeason'])){
     $serie2=$_POST['serie2'];
     $season=$_POST['season'];
     $nbrEp=$_POST['nbrEp'];
+    $url=$_POST['url'];
     
     for ($i=1; $i <= $nbrEp; $i++) { 
       $q="INSERT INTO `episodes`(`num`, `serie_id`, `season_id`) VALUES ('$i','$serie2','$season')";
       $r=mysqli_query($dbc,$q);
     }
     
-    header('location:addEp.php?serie='.$serie2.'&season='.$season);
+    header('location:addEp.php?serie='.$serie2.'&season='.$season.'&url='.$url);
     }
 ?>
 
@@ -178,8 +179,8 @@ if(isset($_POST['addSeason'])){
               </div>
 
               <div class="form-group">
-                <input type="number"
-                  class="form-control" name="nbrEp" aria-describedby="helpId" placeholder="ch7al kayen men 7al9a ?">
+                  <input type="text"
+                         class="form-control" name="url" aria-describedby="helpId" placeholder="Url">
               </div>
 
               <button type="submit" name="addEpisode" class="btn btn-primary btn-block">Add</button>

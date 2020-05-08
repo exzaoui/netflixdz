@@ -35,4 +35,12 @@
         $episodeInfo=mysqli_fetch_assoc($r);
         return($episodeInfo);
     }
+
+    function youtubeVideosFromPlaylist($playlist){
+        $api_key = 'AIzaSyBixvWwZ1zBB9SOesBLVtIlFAnaleO-mk4';
+        $api_url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId='. $playlist . '&key=' . $api_key;
+
+        $playlistInfo = json_decode(file_get_contents($api_url));
+        return $playlistInfo;
+    }
 ?>
