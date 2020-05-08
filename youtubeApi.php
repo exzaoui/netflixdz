@@ -4,7 +4,7 @@ $playlist_id =  'PL3WXh3PJUuW4PHIGmGqZw9LeQ4snuDd4k';
 $api_url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=25&playlistId='. $playlist_id . '&key=' . $api_key;
       
 $playlist = json_decode(file_get_contents($api_url));
-//print_r($playlist);exit();
+print_r($playlist);exit();
 ?>
 
 <!DOCTYPE html>
